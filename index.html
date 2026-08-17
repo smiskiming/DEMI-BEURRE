@@ -11,6 +11,22 @@
   </head>
   <body>
 
+    <!-- EMAIL POPUP MODAL -->
+    <div id="email-popup" class="popup-overlay">
+      <div class="popup-modal">
+        <button class="popup-close" id="popup-close" aria-label="Close popup">&times;</button>
+        <div class="popup-content">
+          <h2>Get 5% Off Your First Order</h2>
+          <p>Join our community and enjoy exclusive access to new products, recipes, and special offers.</p>
+          <form id="email-form" class="popup-form">
+            <input type="email" id="popup-email" placeholder="Enter your email" required aria-label="Email address" />
+            <button type="submit" class="btn-popup-submit">Claim Your Discount</button>
+          </form>
+          <p class="popup-small-text">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- ANNOUNCEMENT BAR -->
     <div class="announce-bar">
       <span>Free shipping on orders over $40 &nbsp;&middot;&nbsp; Slow churned in France &nbsp;&middot;&nbsp; Simple ingredients, nothing else.</span>
@@ -32,80 +48,99 @@
 
     <main>
 
-      <!-- HERO full-bleed -->
+      <!-- HERO -->
       <section class="hero">
-        <div class="hero-img-wrap">
-          <img src="assets/demi-hero.jpg" alt="Demi butter tin in a modern kitchen" class="hero-img" />
-          <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-text">
-          <p class="hero-eyebrow">Beurre, mais en mieux.</p>
-          <h1>Modern French<br>pantry essentials.</h1>
-          <p class="hero-sub">Everyday ingredients inspired by the French table.</p>
-          <a href="#products" class="btn-hero">Shop the collection</a>
+        <div class="hero-content-wrapper">
+          <h1 class="hero-title">Modern French<br>Pantry Essentials</h1>
+          <p class="hero-subtitle">Slow-churned butter from France. Simple ingredients, exceptional quality.</p>
+          <a href="#products" class="btn-hero-primary">Shop Our Butter</a>
         </div>
       </section>
 
-      <!-- MARQUEE STRIP -->
-      <div class="marquee-strip" aria-hidden="true">
-        <div class="marquee-track">
-          <span>Slow churned in France</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Simple ingredients</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>No additives</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Fresh &amp; creamy</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Made for good mornings</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Beurre, mais en mieux.</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Slow churned in France</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Simple ingredients</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>No additives</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Fresh &amp; creamy</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Made for good mornings</span><span class="dot">&nbsp;&middot;&nbsp;</span>
-          <span>Beurre, mais en mieux.</span><span class="dot">&nbsp;&middot;&nbsp;</span>
+      <!-- FEATURED IMAGE SECTION -->
+      <section class="featured-image-section">
+        <div class="featured-container">
+          <img src="assets/01_main_product_croissant.png" alt="Demi Butter with Fresh Croissants" class="featured-img" />
         </div>
-      </div>
+      </section>
+
+      <!-- BENEFITS GRID -->
+      <section class="benefits-section">
+        <div class="benefits-container">
+          <div class="benefit-card">
+            <div class="benefit-icon">🥐</div>
+            <h3>Perfect for Everything</h3>
+            <p>Toast, baking, cooking, and spreading on everything you love</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🇫🇷</div>
+            <h3>Slow Churned in France</h3>
+            <p>Traditional methods for superior texture and flavor</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">✨</div>
+            <h3>Clean Ingredients</h3>
+            <p>Pasteurized cream. Nothing else. No additives or preservatives</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌱</div>
+            <h3>Ethically Sourced</h3>
+            <p>Responsibly produced with care for quality and sustainability</p>
+          </div>
+        </div>
+      </section>
 
       <!-- PRODUCTS -->
       <section id="products" class="products-section">
-        <div class="section-header">
-          <h2>The Collection</h2>
+        <div class="section-header-new">
+          <h2>Shop Our Collection</h2>
           <p>Three pantry staples. Done exceptionally well.</p>
         </div>
-        <div class="products-grid">
+        <div class="products-grid-new">
 
-          <article class="product-card">
-            <div class="card-img-wrap">
+          <article class="product-card-new">
+            <div class="card-img-wrap-new">
               <img src="assets/demi-butter.jpg" alt="Demi Butter tin" />
-              <span class="card-badge">Bestseller</span>
             </div>
-            <div class="card-body">
+            <div class="card-body-new">
+              <span class="product-badge">Bestseller</span>
               <h3>Demi Butter</h3>
-              <p class="card-sub">Unsalted &middot; 8 oz</p>
-              <p>Slow churned from pasteurized cream. Rich, creamy mouthfeel&mdash;perfect for baking, cooking, and spreading on everything.</p>
-              <a href="#" class="btn-card">Add to cart &mdash; $12</a>
+              <p class="product-meta">Unsalted · 8 oz</p>
+              <p class="product-description">Slow churned from pasteurized cream. Rich, creamy mouthfeel—perfect for baking, cooking, and spreading on everything.</p>
+              <div class="product-footer">
+                <span class="product-price">$12</span>
+                <a href="#" class="btn-add-cart">Add to Cart</a>
+              </div>
             </div>
           </article>
 
-          <article class="product-card">
-            <div class="card-img-wrap">
+          <article class="product-card-new">
+            <div class="card-img-wrap-new">
               <img src="assets/demi-butter.jpg" alt="Demi Fleur de Sel" />
             </div>
-            <div class="card-body">
+            <div class="card-body-new">
               <h3>Demi Fleur de Sel</h3>
-              <p class="card-sub">Finishing salt &middot; 3.5 oz</p>
-              <p>Delicate hand-harvested salt with subtle briny notes. A small touch that elevates any dish.</p>
-              <a href="#" class="btn-card">Add to cart &mdash; $9</a>
+              <p class="product-meta">Finishing salt · 3.5 oz</p>
+              <p class="product-description">Delicate hand-harvested salt with subtle briny notes. A small touch that elevates any dish.</p>
+              <div class="product-footer">
+                <span class="product-price">$9</span>
+                <a href="#" class="btn-add-cart">Add to Cart</a>
+              </div>
             </div>
           </article>
 
-          <article class="product-card">
-            <div class="card-img-wrap">
+          <article class="product-card-new">
+            <div class="card-img-wrap-new">
               <img src="assets/demi-butter.jpg" alt="Demi Dijon Mustard" />
             </div>
-            <div class="card-body">
+            <div class="card-body-new">
               <h3>Demi Dijon</h3>
-              <p class="card-sub">Mustard &middot; 7 oz</p>
-              <p>Clean, bright, and versatile. Emulsifies dressings, lifts sauces, and belongs in every kitchen.</p>
-              <a href="#" class="btn-card">Add to cart &mdash; $10</a>
+              <p class="product-meta">Mustard · 7 oz</p>
+              <p class="product-description">Clean, bright, and versatile. Emulsifies dressings, lifts sauces, and belongs in every kitchen.</p>
+              <div class="product-footer">
+                <span class="product-price">$10</span>
+                <a href="#" class="btn-add-cart">Add to Cart</a>
+              </div>
             </div>
           </article>
 
@@ -113,58 +148,69 @@
       </section>
 
       <!-- FEATURE SPLIT -->
-      <section class="feature-split">
-        <div class="split-img">
-          <img src="assets/demi-side.jpg" alt="Demi butter tin close up" />
-        </div>
-        <div class="split-copy">
-          <p class="split-label">The Tin</p>
-          <h2>Designed to live<br>on your counter.</h2>
-          <p>The Demi tin is made to be seen. Navy, red, and gold&mdash;a design that nods to the French &eacute;picerie without winking at it.</p>
-          <ul class="split-specs">
-            <li><span>Diameter</span><strong>4.25 in (108mm)</strong></li>
-            <li><span>Height</span><strong>1.38 in (35mm)</strong></li>
-            <li><span>Net weight</span><strong>8 oz (227g)</strong></li>
-            <li><span>Origin</span><strong>Slow churned in France</strong></li>
-          </ul>
+      <section class="feature-section-new">
+        <div class="feature-grid">
+          <div class="feature-image-col">
+            <img src="assets/demi-side.jpg" alt="Demi butter tin detail" />
+          </div>
+          <div class="feature-content-col">
+            <span class="feature-tag">The Tin</span>
+            <h2>Designed to live on your counter.</h2>
+            <p>The Demi tin is made to be seen. Navy, red, and gold—a design that nods to the French épicerie without winking at it.</p>
+            <div class="feature-specs">
+              <div class="spec-item">
+                <span class="spec-label">Diameter</span>
+                <span class="spec-value">4.25 in (108mm)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Height</span>
+                <span class="spec-value">1.38 in (35mm)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Net weight</span>
+                <span class="spec-value">8 oz (227g)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Origin</span>
+                <span class="spec-value">Slow churned in France</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- QUOTE -->
-      <section class="quote-section">
-        <blockquote>
-          &ldquo;Simple ingredients<br>done exceptionally well.&rdquo;
-        </blockquote>
-        <p class="quote-attr">&mdash; The Demi philosophy</p>
+      <!-- TESTIMONIAL -->
+      <section class="testimonial-section-new">
+        <div class="testimonial-content">
+          <blockquote>"Simple ingredients done exceptionally well."</blockquote>
+          <p class="testimonial-attr">— The Demi philosophy</p>
+        </div>
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="about-section">
-        <div class="about-inner">
-          <div class="about-copy">
-            <p class="about-label">Our Story</p>
-            <h2>French food culture,<br>for everyday kitchens.</h2>
-            <p>French food culture has always celebrated simple ingredients done exceptionally well. Demi brings that philosophy to everyday kitchens&mdash;not as a luxury brand, not as a heritage brand, but as something you reach for every morning without thinking twice.</p>
-            <p>No clich&eacute;s, no theatrics. Just thoughtfully made staples that belong on your counter every day.</p>
+      <section id="about" class="about-section-new">
+        <div class="about-container-new">
+          <div class="about-content">
+            <span class="about-label-new">Our Story</span>
+            <h2>French food culture, for everyday kitchens.</h2>
+            <p>French food culture has always celebrated simple ingredients done exceptionally well. Demi brings that philosophy to everyday kitchens—not as a luxury brand, not as a heritage brand, but as something you reach for every morning without thinking twice.</p>
+            <p>No clichés, no theatrics. Just thoughtfully made staples that belong on your counter every day.</p>
           </div>
-          <div class="about-attrs">
-            <div class="attr"><strong>Slow churned</strong><span>Traditional methods, superior texture.</span></div>
-            <div class="attr"><strong>Simple ingredients</strong><span>Pasteurized cream. Nothing else.</span></div>
-            <div class="attr"><strong>Clean &amp; natural</strong><span>No additives. No preservatives. No shortcuts.</span></div>
-            <div class="attr"><strong>Versatile</strong><span>Toast. Baking. Cooking. Everything.</span></div>
+          <div class="about-image">
+            <img src="assets/demi-side.jpg" alt="Demi butter tin close up" />
           </div>
         </div>
       </section>
 
       <!-- PRESS -->
-      <section class="press-strip">
-        <p class="press-label">As seen in</p>
-        <div class="press-logos">
-          <span>Le Monde</span>
-          <span>Bon App&eacute;tit</span>
-          <span>The New York Times</span>
-          <span>Food52</span>
-          <span>Vogue France</span>
+      <section class="press-section-new">
+        <p class="press-heading">As Featured In</p>
+        <div class="press-logos-new">
+          <span class="press-logo">Le Monde</span>
+          <span class="press-logo">Bon Appétit</span>
+          <span class="press-logo">The New York Times</span>
+          <span class="press-logo">Food52</span>
+          <span class="press-logo">Vogue France</span>
         </div>
       </section>
 
